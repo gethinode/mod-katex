@@ -1,6 +1,6 @@
 {
   "name": "@gethinode/mod-katex",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Adds KaTeX as Hugo module to your Hinode site",
   "keywords": [
     "hugo",

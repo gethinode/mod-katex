@@ -34,9 +34,20 @@
 
 Hinode is a clean blog theme for [Hugo][hugo], an open-source static site generator. Hinode is available as a [template][repository_template], and a [main theme][repository]. This repository maintains a Hugo module to add [KaTeX][katex] to a Hinode site. Visit the Hinode documentation site for [installation instructions][hinode_docs].
 
+## Notes
+
+This modules exposes only one of the extensions by default. All extensions provided by KaTeX are available in the `dist/contrib` folder. Override or modify the mount configuration in `config.toml` as needed.
+
+- [x] `auto-render.js`: Automatically renders all of the math inside text
+- [ ] `copy-tex.js`: When selecting and copying KaTeX-rendered elements, copies their LaTeX source to the clipboard
+- [ ] `mathtex-script-type.js`: Automatically displays LaTeX math inside script tags with type=math/tex
+- [ ] `mhchem.js`: Write beautiful chemical equations easily
+- [ ] `render-a11y-string.js`: Add accessible alternative text to KaTeX equations
+
 <!-- MARKDOWN LINKS -->
 [hugo]: https://gohugo.io
 [hinode_docs]: https://gethinode.com
 [katex]: https://katex.org
+[katex_extensions]: https://katex.org/docs/libs.html#extensions
 [repository]: https://github.com/gethinode/hinode.git
 [repository_template]: https://github.com/gethinode/template.git

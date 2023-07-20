@@ -4,11 +4,23 @@ title = 'Test site for mod-katex'
 
 [module]
   replacements = 'github.com/markdumay/mod-katex -> ../..'
+  [[module.mounts]]
+    source = "static"
+    target = "static"
   [[module.imports]]
     path = "github.com/markdumay/mod-katex"
   [[module.imports.mounts]]
-    source = "dist"
-    target = "static"
+    source = "dist/katex.scss"
+    target = "static/katex.css"
   [[module.imports.mounts]]
-    source = "layouts"
-    target = "layouts"
+    source = "dist/fonts"
+    target = "static/fonts"
+  [[module.imports.mounts]]
+    source = "dist/katex.js"
+    target = "static/js/katex.js"
+  [[module.imports.mounts]]
+    source = "dist/contrib/auto-render.js"
+    target = "static/js/auto-render.js"
+  [[module.imports.mounts]]
+    source = "assets/js/modules/katex/katex-autoload.js"
+    target = "static/js/katex-autoload.js"

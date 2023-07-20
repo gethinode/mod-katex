@@ -4,11 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0">
   <title>{{ with .Title }}{{ printf "%s | " . }}{{ end }}{{ site.Title }}</title>
-  <link rel=stylesheet href="style.css">
+  <link rel=stylesheet href="/katex.css">
 </head>
 <body>
-{{ block "main" . }}
+  {{ block "main" . }}
 
-{{ end }}
+  {{ end }}
+<script src="/js/katex.js"></script>
+<script src="/js/katex-autoload.js"></script>
+<script src="/js/auto-render.js"></script>
 </body>
 </html>

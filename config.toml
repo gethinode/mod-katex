@@ -4,9 +4,11 @@
     min = "0.110.0"
     max = ""
   [[module.mounts]]
-    source = "dist"
-    target = "assets/js/modules/katex"
-    includeFiles = "katex.js"
+    source = "dist/katex.js"
+    target = "assets/js/modules/katex/katex.js"
+  [[module.mounts]]
+    source = "dist/contrib/auto-render.js"
+    target = "assets/js/modules/katex/katex-autorender.js"
   [[module.mounts]]
     source = "dist"
     target = "assets/scss"

@@ -20,9 +20,10 @@
     "mod:tidy": "hugo mod tidy && hugo mod tidy -s exampleSite",
     "mod:update": "hugo mod get -u ./... && npm run -s mod:vendor && npm run -s mod:tidy",
     "mod:vendor": "rimraf _vendor && hugo mod vendor",
-    "postinstall": "npm run -s copy:css && npm run -s copy:js && npm run -s copy:fonts",
+    "postinstall": "npm run -s copy:css && npm run -s copy:js && npm run -s copy:contrib && npm run -s copy:fonts",
     "copy:css": "cpy node_modules/katex/dist/katex.css dist --rename=katex.scss --flat",
     "copy:js": "cpy node_modules/katex/dist/katex.js dist --flat",
+    "copy:contrib": "cpy \"node_modules/katex/dist/contrib/*.js\" \"!node_modules/katex/dist/contrib/*.min.js\"  dist/contrib --flat",
     "copy:fonts": "cpy node_modules/katex/dist/fonts/** dist/fonts --flat",
     "test": "npm run -s build"
   },

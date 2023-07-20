@@ -20,7 +20,10 @@
     "mod:tidy": "hugo mod tidy && hugo mod tidy -s exampleSite",
     "mod:update": "hugo mod get -u ./... && npm run -s mod:vendor && npm run -s mod:tidy",
     "mod:vendor": "hugo mod vendor",
-    "postinstall": "echo TODO: add postinstall instructions",
+    "postinstall": "npm run -s copy:css && npm run -s copy:js && npm run -s copy:fonts",
+    "copy:css": "cpy node_modules/katex/dist/katex.css dist --rename=katex.scss --flat",
+    "copy:js": "cpy node_modules/katex/dist/katex.js dist --flat",
+    "copy:fonts": "cpy node_modules/katex/dist/fonts/** dist/fonts --flat",
     "test": "npm run -s build"
   },
   "repository": {
@@ -38,6 +41,7 @@
     "@semantic-release/git": "^10.0.1",
     "cpy-cli": "^5.0.0",
     "hugo-bin": "^0.111.3",
+    "katex": "^0.16.8",
     "rimraf": "^5.0.0",
     "semantic-release": "^21.0.7"
   },

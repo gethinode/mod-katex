@@ -1,3 +1,3 @@
-module github.com/gethinode/mod-template
+module github.com/markdumay/mod-katex
 
 go 1.19

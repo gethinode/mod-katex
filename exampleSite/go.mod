@@ -1,3 +1,3 @@
-module github.com/markdumay/mod-katex-test
+module github.com/gethinode/mod-katex-test
 
 go 1.19

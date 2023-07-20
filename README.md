@@ -14,17 +14,17 @@
     <a href="https://gethinode.com" alt="Hinode theme">
         <img src="https://img.shields.io/badge/theme-hinode-blue">
     </a>
-    <a href="https://github.com/markdumay/mod-katex/commits/main" alt="Last commit">
-        <img src="https://img.shields.io/github/last-commit/markdumay/mod-katex.svg">
+    <a href="https://github.com/gethinode/mod-katex/commits/main" alt="Last commit">
+        <img src="https://img.shields.io/github/last-commit/gethinode/mod-katex.svg">
     </a>
-    <a href="https://github.com/markdumay/mod-katex/issues" alt="Issues">
-        <img src="https://img.shields.io/github/issues/markdumay/mod-katex.svg">
+    <a href="https://github.com/gethinode/mod-katex/issues" alt="Issues">
+        <img src="https://img.shields.io/github/issues/gethinode/mod-katex.svg">
     </a>
-    <a href="https://github.com/markdumay/mod-katex/pulls" alt="Pulls">
-        <img src="https://img.shields.io/github/issues-pr-raw/markdumay/mod-katex.svg">
+    <a href="https://github.com/gethinode/mod-katex/pulls" alt="Pulls">
+        <img src="https://img.shields.io/github/issues-pr-raw/gethinode/mod-katex.svg">
     </a>
-    <a href="https://github.com/markdumay/mod-katex/blob/main/LICENSE" alt="License">
-        <img src="https://img.shields.io/github/license/markdumay/mod-katex">
+    <a href="https://github.com/gethinode/mod-katex/blob/main/LICENSE" alt="License">
+        <img src="https://img.shields.io/github/license/gethinode/mod-katex">
     </a>
 </p>
 

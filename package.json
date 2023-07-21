@@ -20,11 +20,12 @@
     "mod:tidy": "hugo mod tidy && hugo mod tidy -s exampleSite",
     "mod:update": "hugo mod get -u ./... && npm run -s mod:vendor && npm run -s mod:tidy",
     "mod:vendor": "rimraf _vendor && hugo mod vendor",
-    "postinstall": "npm run -s copy:css && npm run -s copy:js && npm run -s copy:contrib && npm run -s copy:fonts",
+    "postinstall": "npm run -s copy:css && npm run -s copy:js && npm run -s copy:contrib && npm run -s copy:fonts && npm run -s update:scss",
     "copy:css": "cpy node_modules/katex/dist/katex.css dist --rename=katex.scss --flat",
     "copy:js": "cpy node_modules/katex/dist/katex.js dist --flat",
     "copy:contrib": "cpy \"node_modules/katex/dist/contrib/*.js\" \"!node_modules/katex/dist/contrib/*.min.js\"  dist/contrib --flat",
     "copy:fonts": "cpy node_modules/katex/dist/fonts/** dist/fonts --flat",
+    "update:scss": "replace-in-files --string=\"fonts/\" --replacement=\"../fonts/\" dist/katex.scss",
     "test": "npm run -s build"
   },
   "repository": {
@@ -43,6 +44,7 @@
     "cpy-cli": "^5.0.0",
     "hugo-bin": "^0.111.4",
     "katex": "^0.16.8",
+    "replace-in-files-cli": "^2.2.0",
     "rimraf": "^5.0.0",
     "semantic-release": "^21.0.7"
   },

@@ -15,7 +15,7 @@
     includeFiles = "katex.scss"
   [[module.mounts]]
     source = "dist/fonts"
-    target = "static/css/fonts"
+    target = "static/fonts"
   [[module.mounts]]
     source = 'layouts'
     target = 'layouts'

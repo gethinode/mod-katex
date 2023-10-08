@@ -2,7 +2,7 @@
 
 <!-- Tagline -->
 <p align="center">
-    <b>Add KaTeX as Hugo module to your Hinode site</b>
+    <b>A Hugo module to add KaTeX formulas to your Hinode site</b>
     <br />
 </p>
 

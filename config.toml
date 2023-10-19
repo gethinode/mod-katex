@@ -25,3 +25,6 @@
   [[module.mounts]]
     source = 'static'
     target = 'static'
+
+[params.modules.katex]
+  state = "defer"

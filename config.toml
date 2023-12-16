@@ -1,3 +1,9 @@
+[minify]
+  [minify.tdewolff.js]
+    keepVarNames = true
+    precision = 0
+    version = 2022
+
 [module]
   [module.hugoVersion]
     extended = true

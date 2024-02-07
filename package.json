@@ -46,7 +46,7 @@
     "katex": "^0.16.8",
     "replace-in-files-cli": "^2.2.0",
     "rimraf": "^5.0.0",
-    "semantic-release": "^23.0.0"
+    "semantic-release": "^23.0.1"
   },
   "hugo-bin": {
     "buildTags": "extended"

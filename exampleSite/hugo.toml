@@ -3,7 +3,8 @@ languageCode = 'en-us'
 title = 'Test site for mod-katex'
 
 [module]
-  replacements = 'github.com/gethinode/mod-katex -> ../..'
+  # Build and serve using local mod-katex clone declared in the named Hugo workspace:
+  workspace = "mod-katex.work"
   [[module.mounts]]
     source = "static"
     target = "static"

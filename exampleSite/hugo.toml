@@ -25,3 +25,15 @@ title = 'Test site for mod-katex'
   [[module.imports.mounts]]
     source = "assets/js/modules/katex/katex-autoload.js"
     target = "static/js/katex-autoload.js"
+  [[module.imports.mounts]]
+    source = 'layouts'
+    target = 'layouts'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)']]

@@ -1,6 +1,6 @@
 {
   "name": "@gethinode/mod-katex",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Adds KaTeX as Hugo module to your Hinode site",
   "keywords": [
     "hugo",
@@ -42,7 +42,7 @@
     "@semantic-release/exec": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
     "cpy-cli": "^5.0.0",
-    "hugo-bin": "^0.120.2",
+    "hugo-bin": "^0.120.3",
     "katex": "^0.16.8",
     "replace-in-files-cli": "^2.2.0",
     "rimraf": "^5.0.0",

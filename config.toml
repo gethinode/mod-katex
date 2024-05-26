@@ -33,4 +33,6 @@
     target = 'static'
 
 [params.modules.katex]
+  integration = "optional"
+  disableTemplate = true
   state = "defer"

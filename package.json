@@ -45,7 +45,7 @@
     "hugo-bin": "^0.125.2",
     "katex": "^0.16.11",
     "replace-in-files-cli": "^3.0.0",
-    "rimraf": "^5.0.7",
+    "rimraf": "^5.0.8",
     "semantic-release": "^24.0.0"
   },
   "hugo-bin": {

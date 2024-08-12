@@ -36,6 +36,9 @@ Hinode is a clean blog theme for [Hugo][hugo], an open-source static site genera
 
 ## Notes
 
+> [!IMPORTANT]
+> Hugo v0.132.0 introduced (experimental) support for [server-side rendering of KaTeX expressions](https://gohugo.io/functions/transform/tomath/).
+
 This modules exposes only one of the extensions by default. All extensions provided by KaTeX are available in the `dist/contrib` folder. Override or modify the mount configuration in `config.toml` as needed.
 
 - [x] `auto-render.js`: Automatically renders all of the math inside text

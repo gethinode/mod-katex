@@ -1,13 +1,7 @@
-[minify]
-  [minify.tdewolff.js]
-    keepVarNames = true
-    precision = 0
-    version = 2022
-
 [module]
   [module.hugoVersion]
     extended = true
-    min = "0.110.0"
+    min = "0.146.0"
     max = ""
   [[module.mounts]]
     source = "dist/katex.js"

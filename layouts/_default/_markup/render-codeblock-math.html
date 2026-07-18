@@ -1,3 +1,6 @@
+{{- /* Register the katex module as a page dependency, so the page's script and stylesheet
+       handlers include its assets without requiring `modules = ["katex"]` in front matter. */ -}}
+{{- partial "utilities/AddModule.html" (dict "page" .Page "module" "katex") -}}
 <div class="math">$$
 {{ .Inner | safeHTML -}}
 $$</div>{{ "" -}}

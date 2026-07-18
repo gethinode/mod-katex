@@ -31,6 +31,8 @@
   [[module.mounts]]
     source = 'static'
     target = 'static'
+  [[module.imports]]
+    path = "github.com/gethinode/mod-utils/v6"
 
 [params.modules.katex]
   integration = "optional"

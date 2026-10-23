@@ -10,9 +10,8 @@
     source = "dist/contrib/auto-render.js"
     target = "assets/js/modules/katex/katex-autorender.js"
   [[module.mounts]]
-    source = "dist"
-    target = "assets/scss"
-    includeFiles = "katex.scss"
+    source = "dist/katex.scss"
+    target = "assets/scss/katex.scss"
   [[module.mounts]]
     source = "dist/fonts"
     target = "static/fonts"
